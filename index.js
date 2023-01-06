@@ -14,7 +14,7 @@ console.log(chalk.blue.bold("\n Level 1\n"));
 //Function
 function quiz(question, answer) {
   var userAnswer = readline.question(question)
-  if (userAnswer === answer) {
+  if (userAnswer.toUpperCase() === answer.toUpperCase()) {
     console.log(chalk.greenBright("This is correct!"));
     score++;
   } else {
